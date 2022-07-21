@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+.categoryCard:hover {
+    background-color: $secondary;
+    color: $light;
+    transition: 0.3s;
+}
