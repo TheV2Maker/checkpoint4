@@ -6,11 +6,13 @@
 {% endblock %}
 
 {% block body %}
-	<div class="p-4 text-center">
-		<h1>Accueil</h1>
+	{{ path('home_index') }}
+	<div class="p-4 my-name-who animated fadeIn text">
+		<span>Hi, I' Am</span>
+		<h3>THOMAS</h3>
 	</div>
 	<div class="justify-content-center py-5">
-		<h2 class="border-bottom border-2 border-dark pb-2 ms-2 text-dark">Les différentes catégories</h2>
+		<h2 class="border-bottom border-2 border-dark pb-2 ms-2 text-center dark">Les différentes catégories</h2>
 		<div class="row">
 			{% for category in categories %}
 				<div class="col-lg-6 col-md-6 py-2 ">
